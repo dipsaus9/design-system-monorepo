@@ -150,6 +150,33 @@ importers:
 
   config/tsconfig: {}
 
+  packages/design-tokens:
+    devDependencies:
+      '@dipsaus9/eslint-config':
+        specifier: workspace:*
+        version: link:../../config/eslint
+      '@dipsaus9/tsconfig':
+        specifier: workspace:*
+        version: link:../../config/tsconfig
+      '@storybook/react':
+        specifier: ^7.4.3
+        version: 7.4.3(react-dom@18.2.0)(react@18.2.0)(typescript@4.9.5)
+      '@types/node':
+        specifier: ^20.5.2
+        version: 20.5.2
+      '@types/react':
+        specifier: ^18.2.0
+        version: 18.2.22
+      '@types/react-dom':
+        specifier: ^18.2.0
+        version: 18.2.7
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      typescript:
+        specifier: ^4.5.2
+        version: 4.9.5
+
   packages/ui:
     devDependencies:
       '@dipsaus9/eslint-config':
@@ -7814,6 +7841,7 @@ packages:
 
   /loose-envify@1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
+    hasBin: true
     dependencies:
       js-tokens: 4.0.0
 
