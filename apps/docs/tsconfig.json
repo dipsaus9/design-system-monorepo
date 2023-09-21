@@ -1,7 +1,0 @@
-{
-  "extends": "@dipsaus9/tsconfig/web-app.json",
-  "include": ["**/*.ts", "**/*.tsx"],
-  "compilerOptions": {
-    "baseUrl": "."
-  }
-}
