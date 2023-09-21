@@ -258,27 +258,27 @@
   "font-size": {
     "100": {
       "value": "1rem",
-      "type": "fontSize"
+      "type": "fontSizes"
     },
     "200": {
       "value": "1.125rem",
-      "type": "fontSize"
+      "type": "fontSizes"
     },
     "300": {
       "value": "1.25rem",
-      "type": "fontSize"
+      "type": "fontSizes"
     },
     "400": {
       "value": "1.5rem",
-      "type": "fontSize"
+      "type": "fontSizes"
     },
     "500": {
       "value": "2rem",
-      "type": "fontSize"
+      "type": "fontSizes"
     },
     "600": {
       "value": "2.5rem",
-      "type": "fontSize"
+      "type": "fontSizes"
     }
   },
   "line-height": {
