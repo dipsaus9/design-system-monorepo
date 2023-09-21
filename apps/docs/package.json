@@ -5,10 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "storybook build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "lint:fix": "eslint --fix . --ext ts,tsx",
-    "typecheck": "tsc -b ."
+    "build": "storybook build"
   },
   "dependencies": {
     "globby": "^13.2.2",
@@ -16,6 +13,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@dipsaus9/eslint-config": "workspace:*",
     "@storybook/addon-essentials": "^7.4.3",
     "@storybook/addon-interactions": "^7.4.3",
     "@storybook/addon-links": "^7.4.3",

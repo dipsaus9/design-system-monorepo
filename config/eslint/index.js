@@ -1,5 +1,7 @@
 module.exports = {
-  extends: ["turbo", "prettier"],
+  extends: ["turbo", "prettier", "plugin:@typescript-eslint/recommended"],
+  plugins: ["import"],
+  parser: "@typescript-eslint/parser",
   settings: {
     react: {
       version: "detect",
@@ -36,15 +38,11 @@ module.exports = {
       "error",
       {
         devDependencies: [
-          "codegen.ts",
-          "*.config.*",
           "server/*",
-          "setup-tests.js",
           "mocks/**/*",
           "app/**/*.{spec,test}.{ts,tsx}",
           "app/test/**/*",
           "test-utils/**/*",
-          "app/**/*/@generated/**/*",
           "./tests/**/*",
           "scripts/*",
           "src/*/*.stories.tsx",

@@ -9,12 +9,14 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
+    "typecheck": "turbo run typecheck",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "format:check": "prettier --check \"**/*.{js,ts,tsx,css,scss,md}\"",
     "format:fix": "prettier --write \"**/*.{js,ts,tsx,css,scss,md}\""
   },
   "devDependencies": {
+    "@dipsaus9/eslint-config": "workspace:*",
     "@dipsaus9/tsconfig": "workspace:*",
     "eslint": "^8.48.0",
     "prettier": "^3.0.3",
