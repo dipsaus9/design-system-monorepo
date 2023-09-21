@@ -235,21 +235,25 @@
       "type": "opacity"
     }
   },
-  "primary": {
-    "value": "Inter",
-    "type": "fontFamilies"
+  "font-family": {
+    "primary": {
+      "value": "Inter",
+      "type": "fontFamilies"
+    }
   },
-  "regular": {
-    "value": "500",
-    "type": "fontWeights"
-  },
-  "bold": {
-    "value": "600",
-    "type": "fontWeights"
-  },
-  "heavy": {
-    "value": "900",
-    "type": "fontWeights"
+  "font-weight": {
+    "regular": {
+      "value": "500",
+      "type": "fontWeights"
+    },
+    "bold": {
+      "value": "600",
+      "type": "fontWeights"
+    },
+    "heavy": {
+      "value": "900",
+      "type": "fontWeights"
+    }
   },
   "font-size": {
     "100": {
