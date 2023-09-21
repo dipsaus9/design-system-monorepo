@@ -257,27 +257,27 @@
   },
   "font-size": {
     "100": {
-      "value": "16px",
+      "value": "1rem",
       "type": "fontSize"
     },
     "200": {
-      "value": "18px",
+      "value": "1.125rem",
       "type": "fontSize"
     },
     "300": {
-      "value": "20px",
+      "value": "1.25rem",
       "type": "fontSize"
     },
     "400": {
-      "value": "24px",
+      "value": "1.5rem",
       "type": "fontSize"
     },
     "500": {
-      "value": "32px",
+      "value": "2rem",
       "type": "fontSize"
     },
     "600": {
-      "value": "48px",
+      "value": "2.5rem",
       "type": "fontSize"
     }
   },
