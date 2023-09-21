@@ -1,51 +1,51 @@
 {
   "spacing": {
     "50": {
-      "value": "4",
+      "value": "0.25rem",
       "type": "spacing"
     },
     "100": {
-      "value": "8",
+      "value": "0.5rem",
       "type": "spacing"
     },
     "150": {
-      "value": "12",
+      "value": "0.75rem",
       "type": "spacing"
     },
     "200": {
-      "value": "16",
+      "value": "1rem",
       "type": "spacing"
     },
     "300": {
-      "value": "24",
+      "value": "1.5rem",
       "type": "spacing"
     },
     "400": {
-      "value": "32",
+      "value": "2rem",
       "type": "spacing"
     },
     "500": {
-      "value": "40",
+      "value": "3rem",
       "type": "spacing"
     },
     "600": {
-      "value": "48",
+      "value": "4rem",
       "type": "spacing"
     },
     "700": {
-      "value": "56",
+      "value": "6rem",
       "type": "spacing"
     },
     "800": {
-      "value": "64",
+      "value": "8rem",
       "type": "spacing"
     },
     "900": {
-      "value": "72",
+      "value": "12rem",
       "type": "spacing"
     },
     "1000": {
-      "value": "80",
+      "value": "16rem",
       "type": "spacing"
     }
   },
