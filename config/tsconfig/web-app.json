@@ -1,9 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Next.js",
+  "display": "Web app",
   "extends": "./base.json",
   "compilerOptions": {
-    "plugins": [{ "name": "next" }],
     "allowJs": true,
     "declaration": false,
     "declarationMap": false,
@@ -16,6 +15,6 @@
     "strict": false,
     "target": "es5"
   },
-  "include": ["src", "next-env.d.ts"],
+  "include": ["src", "app"],
   "exclude": ["node_modules"]
 }

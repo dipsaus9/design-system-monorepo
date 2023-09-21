@@ -1,17 +1,28 @@
 {
+  "name": "@dipsaus9/design-system-monorepo",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "config/*"
+  ],
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "lint:fix": "turbo run lint:fix",
+    "format:check": "prettier --check \"**/*.{js,ts,tsx,css,scss,md}\"",
+    "format:fix": "prettier --write \"**/*.{js,ts,tsx,css,scss,md}\""
   },
   "devDependencies": {
+    "@dipsaus9/tsconfig": "workspace:*",
     "eslint": "^8.48.0",
     "prettier": "^3.0.3",
-    "tsconfig": "workspace:*",
     "turbo": "latest"
   },
   "packageManager": "pnpm@8.6.10",
-  "name": "design-system-monorepo"
+  "engines": {
+    "node": "18",
+    "pnpm": "8"
+  }
 }

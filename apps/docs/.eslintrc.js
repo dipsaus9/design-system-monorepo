@@ -1,3 +1,4 @@
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
-  extends: ["custom/next"],
+  extends: ["@dipsaus9/eslint-config", "plugin:storybook/recommended"],
 };
