@@ -1,0 +1,21 @@
+{
+  "name": "@dipsaus9/tailwind-theme",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@dipsaus9/eslint-config": "workspace:*",
+    "@dipsaus9/tsconfig": "workspace:*",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@dipsaus9/design-tokens": "workspace:*"
+  },
+  "exports": {
+    ".": "./src/main.js"
+  },
+  "main": "./src/main.js"
+}
