@@ -1,7 +1,17 @@
 import { transforms, registerTransforms } from "@tokens-studio/sd-transforms";
 import StyleDictionary from "style-dictionary";
 
+import {
+  FilterNameTypography,
+  FilterTypography,
+  FormatterNameTypographyJavaScriptFlatModule,
+  FormatterTypographyTypeScript,
+} from "./typography";
+
 registerTransforms(StyleDictionary);
+
+StyleDictionary.registerFormat(FormatterTypographyTypeScript);
+StyleDictionary.registerFilter(FilterTypography);
 
 StyleDictionary.registerTransform({
   type: "name",
@@ -29,6 +39,23 @@ function init() {
           {
             destination: "all.js",
             format: "javascript/module-flat",
+          },
+        ],
+      },
+      tailwindTypography: {
+        buildPath: "dist/js/",
+        transforms: [
+          "attribute/cti",
+          "size/rem",
+          "color/hex",
+          "name/cti/kebab",
+          "name/ts/cleanup",
+        ],
+        files: [
+          {
+            format: FormatterNameTypographyJavaScriptFlatModule,
+            destination: "typography.js",
+            filter: FilterNameTypography,
           },
         ],
       },

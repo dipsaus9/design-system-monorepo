@@ -1,0 +1,42 @@
+<%= header %>
+
+const fontFamily = {
+<%_ for (const {name, value} of fontFamilyTokens) { _%>
+  "<%= name %>": "<%= value %>",
+<%_ } _%>
+}
+
+const fontSize = {
+<%_ for (const {name, value} of fontSizeTokens) { _%>
+  "<%= name %>": ["<%= value.size %>", {
+      lineHeight: "<%= value.lineHeight %>",
+      <% if (value.fontWeight) { %> fontWeight: "<%= value.fontWeight %>", <%_ } _%>
+  }],
+<%_ } _%>
+}
+
+const fontWeight = {
+<%_ for (const {name, value} of fontWeightTokens) { _%>
+  "<%= name %>": "<%= value %>",
+<%_ } _%>
+}
+
+const lineHeight = {
+<%_ for (const {name, value} of lineHeightTokens) { _%>
+  "<%= name %>": "<%= value %>",
+<%_ } _%>
+}
+
+const letterSpacing = {
+<%_ for (const {name, value} of letterSpacing) { _%>
+  "<%= name %>": "<%= value %>",
+<%_ } _%>
+}
+
+module.exports = {
+  fontFamily,
+  fontSize,
+  fontWeight,
+  lineHeight,
+  letterSpacing,
+}

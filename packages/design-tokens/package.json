@@ -15,6 +15,7 @@
     "@dipsaus9/eslint-config": "workspace:*",
     "@dipsaus9/tsconfig": "workspace:*",
     "@storybook/react": "^7.4.3",
+    "@types/ejs": "^3.1.2",
     "@types/node": "^20.5.2",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
@@ -25,6 +26,7 @@
   },
   "dependencies": {
     "@tokens-studio/sd-transforms": "^0.11.1",
+    "ejs": "^3.1.9",
     "fs": "0.0.1-security",
     "prettier": "^3.0.3",
     "style-dictionary": "^3.8.0",
