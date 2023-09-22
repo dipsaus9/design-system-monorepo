@@ -1,13 +1,31 @@
 module.exports = {
-  extends: ["turbo", "prettier", "plugin:@typescript-eslint/recommended"],
-  plugins: ["import"],
+  extends: [
+    "turbo",
+    "prettier",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:tailwindcss/recommended",
+  ],
+  plugins: ["import", "tailwindcss"],
   parser: "@typescript-eslint/parser",
   settings: {
     react: {
       version: "detect",
     },
+    tailwindcss: {
+      cssFiles: [
+        "**/*.css",
+        "**/*.scss",
+        "!**/node_modules",
+        "!**/.*",
+        "!**/dist",
+        "!**/build",
+      ],
+      config: "./tailwind.config.cjs",
+      callees: ["classnames", "clsx", "ctl", "cva", "cx"],
+    },
   },
   rules: {
+    "tailwindcss/no-custom-classname": "error",
     // https://basarat.gitbook.io/typescript/main-1/defaultisbad
     "import/prefer-default-export": "off",
     // Use function hoisting to improve code readability
