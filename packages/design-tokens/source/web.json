@@ -1,0 +1,78 @@
+{
+  "typography": {
+    "title": {
+      "xxl": {
+        "value": {
+          "fontFamily": "{font-family.primary}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.100}",
+          "fontSize": "{font-size.600}",
+          "letterSpacing": "{letter-spacing.0}",
+          "textDecoration": "{text-decoration.none}",
+          "textCase": "{text-case.none}"
+        },
+        "type": "typography"
+      },
+      "xl": {
+        "value": {
+          "fontFamily": "{font-family.primary}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.100}",
+          "fontSize": "{font-size.500}",
+          "letterSpacing": "{letter-spacing.0}",
+          "textDecoration": "{text-decoration.none}",
+          "textCase": "{text-case.none}"
+        },
+        "type": "typography"
+      },
+      "lg": {
+        "value": {
+          "fontFamily": "{font-family.primary}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.100}",
+          "fontSize": "{font-size.400}",
+          "letterSpacing": "{letter-spacing.0}",
+          "textDecoration": "{text-decoration.none}",
+          "textCase": "{text-case.none}"
+        },
+        "type": "typography"
+      },
+      "md": {
+        "value": {
+          "fontFamily": "{font-family.primary}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.100}",
+          "fontSize": "{font-size.300}",
+          "letterSpacing": "{letter-spacing.0}",
+          "textDecoration": "{text-decoration.none}",
+          "textCase": "{text-case.none}"
+        },
+        "type": "typography"
+      }
+    },
+    "body": {
+      "large": {
+        "regular": {
+          "value": {
+            "fontFamily": "{font-family.primary}",
+            "fontWeight": "{font-weight.regular}",
+            "lineHeight": "{line-height.100}",
+            "fontSize": "{font-size.100}",
+            "letterSpacing": "{letter-spacing.0}"
+          },
+          "type": "typography"
+        },
+        "bold": {
+          "value": {
+            "fontFamily": "{font-family.primary}",
+            "fontWeight": "{font-weight.bold}",
+            "lineHeight": "{line-height.100}",
+            "fontSize": "{font-size.100}",
+            "letterSpacing": "{letter-spacing.0}"
+          },
+          "type": "typography"
+        }
+      }
+    }
+  }
+}
