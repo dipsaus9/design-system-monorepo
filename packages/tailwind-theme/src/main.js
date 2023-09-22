@@ -19,7 +19,7 @@ const breakpoints = {
   "2xl": "1536px",
 };
 
-const TailwindPreset = {
+module.exports = {
   theme: {
     colors: colors,
     spacing: spacing,
@@ -39,5 +39,3 @@ const TailwindPreset = {
   extend: {},
   plugins: [],
 };
-
-module.exports = TailwindPreset;

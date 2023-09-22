@@ -93,4 +93,18 @@ module.exports = {
     "@typescript-eslint/no-unsafe-assignment": "off",
     "react/react-in-jsx-scope": "off",
   },
+  overrides: [
+    {
+      files: ["./*.cjs", "vite.config.ts", ".eslintrc.js"],
+      env: {
+        node: true,
+      },
+      rules: {
+        "import/no-extraneous-dependencies": "off",
+        "import/no-relative-packages": "off",
+        "no-undef": "off",
+        "@typescript-eslint/no-var-requires": "off",
+      },
+    },
+  ],
 };

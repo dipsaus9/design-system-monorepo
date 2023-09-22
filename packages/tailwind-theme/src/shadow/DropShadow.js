@@ -1,4 +1,4 @@
-import { dropShadow as dropShadowTokens } from "@dipsaus9/design-tokens/dist/js/box-shadow";
+import dropShadowTokens from "@dipsaus9/design-tokens/dist/js/shadow";
 
 const baseValues = {};
 

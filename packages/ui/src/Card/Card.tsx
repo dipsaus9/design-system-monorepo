@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { cx } from "class-variance-authority";
 
 interface CardProps {
   className?: string;
@@ -10,7 +11,7 @@ interface CardProps {
 export function Card({ className, title, children, href }: CardProps) {
   return (
     <a
-      className={className}
+      className={cx("text-brand-tertiary-700", className)}
       href={href}
       rel="noopener noreferrer"
       target="_blank"

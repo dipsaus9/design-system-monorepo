@@ -1,4 +1,4 @@
-import { boxShadow as boxShadowTokens } from "@dipsaus9/design-tokens/dist/js/box-shadow";
+import boxShadowTokens from "@dipsaus9/design-tokens/dist/js/shadow";
 
 const baseValues = {};
 

@@ -1,4 +1,4 @@
-import { spacing as spacingTokens } from "@dipsaus9/design-tokens/dist/js/spacing";
+import spacingTokens from "@dipsaus9/design-tokens/dist/js/spacing";
 
 const baseValues = {
   0: "0px",
