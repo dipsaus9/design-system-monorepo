@@ -73,6 +73,102 @@
           "type": "typography"
         }
       }
+    },
+    "button": {
+      "primary": {
+        "value": {
+          "fontFamily": "{font-family.primary}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.100}",
+          "fontSize": "{font-size.100}",
+          "letterSpacing": "{letter-spacing.0}",
+          "textDecoration": "{text-decoration.none}",
+          "textCase": "{text-case.none}"
+        },
+        "type": "typography"
+      },
+      "secondary": {
+        "value": {
+          "fontFamily": "{font-family.primary}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.100}",
+          "fontSize": "{font-size.100}",
+          "letterSpacing": "{letter-spacing.0}",
+          "textDecoration": "{text-decoration.none}",
+          "textCase": "{text-case.none}"
+        },
+        "type": "typography"
+      }
+    }
+  },
+  "colors": {
+    "background": {
+      "button": {
+        "primary": {
+          "default": {
+            "value": "{colors.brand.primary.900}",
+            "type": "color"
+          }
+        },
+        "secondary": {
+          "default": {
+            "value": "{colors.brand.secondary.800}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "text": {
+      "button": {
+        "primary": {
+          "value": "{colors.neutral.100}",
+          "type": "color"
+        }
+      }
+    }
+  },
+  "border": {
+    "border": {
+      "button": {
+        "primary": {
+          "value": {
+            "color": "{colors.brand.primary.900}",
+            "width": "{borderWidth.100}"
+          },
+          "type": "border"
+        },
+        "secondary": {
+          "value": {
+            "color": "{colors.brand.secondary.900}",
+            "width": "{borderWidth.100}"
+          },
+          "type": "border"
+        }
+      }
+    }
+  },
+  "border-radius": {
+    "border-radius": {
+      "button": {
+        "primary": {
+          "value": "{borderRadius.50}",
+          "type": "borderRadius"
+        }
+      }
+    }
+  },
+  "spacing": {
+    "button": {
+      "primary": {
+        "x": {
+          "value": "{spacing.200}",
+          "type": "spacing"
+        },
+        "y": {
+          "value": "{spacing.50}",
+          "type": "spacing"
+        }
+      }
     }
   }
 }
