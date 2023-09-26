@@ -125,49 +125,45 @@
           "type": "color"
         }
       }
-    }
-  },
-  "border": {
+    },
     "border": {
       "button": {
         "primary": {
-          "value": {
-            "color": "{colors.brand.primary.900}",
-            "width": "{borderWidth.100}"
-          },
-          "type": "border"
+          "value": "{colors.brand.primary.900}",
+          "type": "color"
         },
         "secondary": {
-          "value": {
-            "color": "{colors.brand.secondary.900}",
-            "width": "{borderWidth.100}"
-          },
-          "type": "border"
+          "value": "{colors.brand.secondary.900}",
+          "type": "color"
+        },
+        "tertiary": {
+          "value": "{colors.brand.tertiary.600}",
+          "type": "color"
         }
       }
     }
   },
   "border-radius": {
-    "border-radius": {
-      "button": {
-        "primary": {
-          "value": "{borderRadius.50}",
-          "type": "borderRadius"
-        }
-      }
+    "button": {
+      "value": "{borderRadius.50}",
+      "type": "borderRadius"
+    }
+  },
+  "border-width": {
+    "button": {
+      "value": "{borderRadius.50}",
+      "type": "borderWidth"
     }
   },
   "spacing": {
     "button": {
-      "primary": {
-        "x": {
-          "value": "{spacing.200}",
-          "type": "spacing"
-        },
-        "y": {
-          "value": "{spacing.50}",
-          "type": "spacing"
-        }
+      "x": {
+        "value": "{spacing.200}",
+        "type": "spacing"
+      },
+      "y": {
+        "value": "{spacing.50}",
+        "type": "spacing"
       }
     }
   }

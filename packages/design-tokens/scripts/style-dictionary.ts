@@ -105,7 +105,9 @@ function init() {
             format: "javascript/module-flat",
             filter: (token) => {
               return (
-                token.type === "borderWidth" || token.type === "composition"
+                token.type === "borderWidth" ||
+                token.type === "composition" ||
+                token.type === "border"
               );
             },
           },
