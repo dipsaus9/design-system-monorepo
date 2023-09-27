@@ -1,0 +1,2 @@
+import{j as o,L as i}from"./Link-ed7136e5.js";import"./index-76fb7be0.js";import"./_commonjsHelpers-de833af9.js";const p={title:"Atoms/Link",args:{children:"Link",href:"#"},render:a=>o.jsx(i,{...a})},r={};var e,s,t;r.parameters={...r.parameters,docs:{...(e=r.parameters)==null?void 0:e.docs,source:{originalSource:"{}",...(t=(s=r.parameters)==null?void 0:s.docs)==null?void 0:t.source}}};const d=["Default"];export{r as Default,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=Link.stories-f0c93fda.js.map
