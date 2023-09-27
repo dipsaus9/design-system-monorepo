@@ -17,18 +17,23 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
     actions: [
       {
         type: "add",
-        path: "src/{{pascalCase name}}/{{pascalCase name}}.tsx",
+        path: "src/{{lowerCase name}}/{{pascalCase name}}.tsx",
         templateFile: "templates/component.hbs",
       },
       {
         type: "add",
-        path: "src/{{pascalCase name}}/index.ts",
+        path: "src/{{lowerCase name}}/index.ts",
         templateFile: "templates/root-component.hbs",
+      },
+      {
+        type: "add",
+        path: "src/{{lowerCase name}}/{{ pascalCase name }}.stories.tsx",
+        templateFile: "templates/storybook.hbs",
       },
       {
         type: "append",
         path: "src/index.ts",
-        template: 'export * from "./{{pascalCase name}}";',
+        template: 'export * from "./{{lowerCase name}}";',
       },
     ],
   });

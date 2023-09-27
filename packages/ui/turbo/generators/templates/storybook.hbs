@@ -1,0 +1,15 @@
+import type { Meta, StoryObj } from "@storybook/react";
+
+import { {{ pascalCase name }} } from "./{{ pascalCase name }}";
+
+const Base: Meta<typeof {{ pascalCase name }}> = {
+	title: "Atoms/{{ pascalCase name }}",
+	args: {
+		children: "{{ pascalCase name }}"
+	}
+	render: (props) => <{{ pascalCase name }} {...props} />,
+};
+
+export default Base;
+
+export const Default: StoryObj = {};

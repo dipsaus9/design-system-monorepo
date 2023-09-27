@@ -18,7 +18,7 @@ StyleDictionary.registerTransform({
   name: "name/ts/cleanup",
   transformer: (token) =>
     token.name.replace(
-      /^spacing-|^border-radius-|^shadow-|^colors-|^border-width-|^border-tokens-|^typography-|^font-family-|^font-size-|^font-weight-|^line-height-|^letter-spacing-|^opacity-/,
+      /^spacing-|^border-radius-|^colors-|^border-width-|^border-tokens-|^typography-|^font-family-|^font-size-|^font-weight-|^line-height-|^letter-spacing-|^opacity-/,
       ""
     ),
 });
