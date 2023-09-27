@@ -244,7 +244,7 @@
             "type": "color"
           },
           "disabled": {
-            "value": "{colors.neutral.300}",
+            "value": "{colors.neutral.200}",
             "type": "color"
           }
         },
@@ -280,7 +280,7 @@
             "type": "color"
           },
           "disabled": {
-            "value": "{colors.neutral.300}",
+            "value": "{colors.neutral.400}",
             "type": "color"
           }
         }
@@ -318,7 +318,7 @@
             "type": "color"
           },
           "disabled": {
-            "value": "{colors.neutral.300}",
+            "value": "{colors.neutral.200}",
             "type": "color"
           }
         },
@@ -354,7 +354,7 @@
             "type": "color"
           },
           "disabled": {
-            "value": "{colors.neutral.300}",
+            "value": "{colors.neutral.400}",
             "type": "color"
           }
         }
