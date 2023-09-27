@@ -5,9 +5,6 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "baseUrl": ".",
-    "noEmit": true,
-    "paths": {
-      "~/*": ["./src/*"]
-    }
+    "noEmit": true
   }
 }
