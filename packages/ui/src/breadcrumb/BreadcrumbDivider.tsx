@@ -17,7 +17,7 @@ export function BreadcrumbDivider({
 }: BreadcrumbDividerProps) {
   return (
     <ChevronRight
-      className={cx("text-icon-breadcrumb", className)}
+      className={cx("text-colors-icon-breadcrumb", className)}
       {...props}
     />
   );

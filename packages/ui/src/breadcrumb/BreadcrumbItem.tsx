@@ -36,10 +36,10 @@ export const BreadcrumbItem = forwardRef<BreadcrumbItemProps, typeof defaultAs>(
         ref={ref}
         className={cx(
           "relative m-0 py-0",
-          "font-breadcrumb-default text-breadcrumb-default text-text-breadcrumb-default",
-          "last-of-type:text-text-breadcrumb-active",
-          "hover:text-breadcrumb-hover",
-          "focus:text-breadcrumb-focus",
+          "font-typography-breadcrumb-default text-typography-breadcrumb-default text-colors-text-breadcrumb-default",
+          "last-of-type:text-colors-text-breadcrumb-active",
+          "hover:text-typography-breadcrumb-hover",
+          "focus:text-typography-breadcrumb-focus",
           className
         )}
         {...props}
