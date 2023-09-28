@@ -341,7 +341,7 @@
       },
       "breadcrumb": {
         "default": {
-          "value": "{colors.brand.primary.900}",
+          "value": "{colors.brand.tertiary.700}",
           "type": "color"
         },
         "active": {
