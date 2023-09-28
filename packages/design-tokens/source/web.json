@@ -274,7 +274,7 @@
             "type": "color"
           },
           "hover": {
-            "value": "{colors.brand.primary.600}",
+            "value": "{colors.brand.tertiary.700}",
             "type": "color"
           },
           "focus": {
