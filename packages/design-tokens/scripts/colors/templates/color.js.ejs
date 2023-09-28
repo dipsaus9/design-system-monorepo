@@ -1,0 +1,9 @@
+<%= header %> 
+
+const colors = { 
+<%_ for (const {name, value} of tokens) { _%>
+  "<%= name %>": "<%= value %>", 
+<%_ } _%> 
+} 
+
+module.exports = { colors }

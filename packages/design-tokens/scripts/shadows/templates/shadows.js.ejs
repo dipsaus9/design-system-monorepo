@@ -1,0 +1,18 @@
+<%= header %>
+
+const dropShadow = {
+<%_ for (const { name, x, y, blur, spread, color } of tokens) { _%>
+    "<%= name %>": "<%= x %> <%= y %> <%= x %> <%= blur %> <%= color %>",
+<%_ } _%>
+}
+
+const boxShadow = {
+<%_ for (const { name, x, y, blur, spread, color } of tokens) { _%>
+    "<%= name %>": "<%= x %> <%= y %> <%= blur %> <%= spread %> <%= color %>",
+<%_ } _%>
+}
+
+module.exports = {
+    dropShadow,
+    boxShadow
+}

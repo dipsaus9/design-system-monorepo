@@ -7,18 +7,36 @@ import {
   FormatterNameTypographyJavaScriptFlatModule,
   FormatterTypographyTypeScript,
 } from "./typography";
+import {
+  FilterNameShadow,
+  FilterShadow,
+  FormatterNameShadowTypeScriptWeb,
+  FormatterShadowTypeScriptWeb,
+} from "./shadows";
+import {
+  FilterColor,
+  FilterNameColor,
+  FormatterColorTypeScript,
+  FormatterNameColorTypeScript,
+} from "./colors";
 
 registerTransforms(StyleDictionary);
 
 StyleDictionary.registerFormat(FormatterTypographyTypeScript);
 StyleDictionary.registerFilter(FilterTypography);
 
+StyleDictionary.registerFormat(FormatterShadowTypeScriptWeb);
+StyleDictionary.registerFilter(FilterShadow);
+
+StyleDictionary.registerFormat(FormatterColorTypeScript);
+StyleDictionary.registerFilter(FilterColor);
+
 StyleDictionary.registerTransform({
   type: "name",
   name: "name/ts/cleanup",
   transformer: (token) =>
     token.name.replace(
-      /^spacing-|^border-radius-|^colors-|^border-width-|^border-tokens-|^typography-|^font-family-|^font-size-|^font-weight-|^line-height-|^letter-spacing-|^opacity-/,
+      /^spacing-|^shadow-|^border-radius-|^colors-|^border-width-|^border-tokens-|^typography-|^font-family-|^font-size-|^font-weight-|^line-height-|^letter-spacing-|^opacity-/,
       ""
     ),
 });
@@ -42,7 +60,7 @@ function init() {
           },
         ],
       },
-      tailwindTypography: {
+      tailwindExtend: {
         buildPath: "dist/js/",
         transforms: [
           "attribute/cti",
@@ -57,6 +75,16 @@ function init() {
             destination: "typography.js",
             filter: FilterNameTypography,
           },
+          {
+            format: FormatterNameShadowTypeScriptWeb,
+            destination: "shadow.js",
+            filter: FilterNameShadow,
+          },
+          {
+            format: FormatterNameColorTypeScript,
+            destination: "colors.js",
+            filter: FilterNameColor,
+          },
         ],
       },
       tailwind: {
@@ -64,31 +92,10 @@ function init() {
         buildPath: "dist/js/",
         files: [
           {
-            destination: "colors.js",
-            format: "javascript/module-flat",
-            filter: (token) => {
-              const type = token.type;
-
-              return (
-                type === "color" ||
-                type === "border" ||
-                type === "boxShadow" ||
-                type === "composition"
-              );
-            },
-          },
-          {
             destination: "spacing.js",
             format: "javascript/module-flat",
             filter: (token) => {
               return token.type === "spacing" || token.type === "composition";
-            },
-          },
-          {
-            destination: "shadow.js",
-            format: "javascript/module-flat",
-            filter: (token) => {
-              return token.type === "boxShadow" || token.type === "composition";
             },
           },
           {

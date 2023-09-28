@@ -1,6 +1,6 @@
 import { borderRadius } from "./border-radius";
 import { borderWidth } from "./border-width";
-import { boxShadow, dropShadow } from "./shadow";
+import { boxShadow } from "./shadow";
 import { colors } from "./colors";
 import {
   fontFamily,
@@ -26,7 +26,6 @@ module.exports = {
     borderRadius: borderRadius,
     borderWidth: borderWidth,
     boxShadow: boxShadow,
-    dropShadow: dropShadow,
     fontFamily: fontFamily,
     fontWeight: fontWeight,
     lineHeight: lineHeight,
