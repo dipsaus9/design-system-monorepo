@@ -36,3 +36,7 @@ pnpm dev
 ## Presentation
 
 You can see the slides from the presentation [here](https://docs.google.com/presentation/d/1Ah-9M87iwlN2bD3f7MCn-jjGKIvSvIqsWff7Owrg0KQ/edit?usp=sharing)
+
+## Figma File
+
+You can find the Figma file over [here](https://www.figma.com/file/xiYOpPBT9zeXWmo6G8pNqF/Design-system-Examples?type=design&t=tzcz57UcFSVvJerB-6)
