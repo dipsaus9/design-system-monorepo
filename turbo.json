@@ -6,14 +6,18 @@
       "outputs": ["build/**", "!.cache/**", "dist/**"],
       "dependsOn": ["^build"]
     },
-    "lint": {},
+    "lint": {
+      "dependsOn": ["^build"]
+    },
     "lint:fix": {},
     "dev": {
       "cache": false,
       "persistent": true,
       "dependsOn": ["^build"]
     },
-    "test:ci": {},
+    "test:ci": {
+      "dependsOn": ["^build"]
+    },
     "test:e2e:ci": {},
     "typecheck": {
       "dependsOn": ["^build"]
